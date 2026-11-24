@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRIME HOUSE | Premium Steakhouse – Where Every Bite Becomes an Experience</title>
+  <meta name="description" content="PRIME HOUSE is a premium steakhouse serving expertly grilled cuts, signature burgers and refined desserts. Explore the menu, see our offers and book a table. (Demo website)">
+  <meta name="theme-color" content="#F4EBDD">
+  <meta property="og:title" content="PRIME HOUSE | Premium Steakhouse">
+  <meta property="og:description" content="Discover exceptional cuts, expertly grilled, and crafted for an unforgettable dining experience.">
+  <meta property="og:type" content="website">
+
+  <!-- Inline favicon (prevents a /favicon.ico 404 in the console) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338271E'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23B68A63'%3EP%3C/text%3E%3C/svg%3E">
+
+  <!-- If JavaScript is unavailable, show animated content instead of leaving it hidden -->
+  <noscript><style>.reveal, .fade-in { opacity: 1 !important; transform: none !important; }</style></noscript>
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- 01. NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="brand" aria-label="PRIME HOUSE – back to top">PRIME<span>HOUSE</span></a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#menu">Menu</a></li>
+          <li><a class="nav__link" href="#offers">Offers</a></li>
+          <li><a class="nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="nav__link" href="#reviews">Reviews</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="#reservation">Book a Table</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- 02. HERO -->
+    <section class="hero" id="home">
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" alt="A perfectly grilled steak served on a dark board" fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light fade-in">Premium Steakhouse</p>
+        <h1 class="hero__title fade-in">Experience Steak <em>Perfection.</em></h1>
+        <p class="hero__text fade-in">Discover exceptional cuts, expertly grilled, and crafted for an unforgettable dining experience.</p>
+        <div class="hero__actions fade-in">
+          <a href="#menu" class="btn btn--primary btn--lg">Explore Our Menu</a>
+          <a href="#reservation" class="btn btn--outline-light btn--lg">Book a Table</a>
+        </div>
+        <p class="hero__tagline fade-in">Where Every Bite Becomes an Experience.</p>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- 03. ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img class="about__img about__img--main" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Thick-cut steak resting after grilling" loading="lazy">
+          <img class="about__img about__img--small" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Elegant plated dish at the restaurant" loading="lazy">
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2 class="section__title">A Table Set for Steak Lovers</h2>
+          <p>PRIME HOUSE was created around a simple idea: great steak deserves patience, good ingredients and a room where you can enjoy it without hurry. Our kitchen focuses on carefully selected cuts, honest seasoning and precise cooking.</p>
+          <p>Each cut is seasoned simply and finished over an open flame or in a hot cast-iron pan, depending on the cut, then rested before serving so the juices stay where they belong.</p>
+          <ul class="about__facts">
+            <li><strong>Ribeye &amp; T-Bone</strong> Rich marbling, bold flavor</li>
+            <li><strong>Filet &amp; Tenderloin</strong> Lean, tender, delicate</li>
+            <li><strong>Open-flame grilling</strong> Charred outside, juicy inside</li>
+          </ul>
+          <a href="#menu" class="btn btn--primary">View the Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. SIGNATURE DISHES -->
+    <section class="section section--beige" id="signature">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Chef's Selection</p>
+          <h2 class="section__title">Signature Dishes</h2>
+          <p class="section__sub">Four cuts from our grill, cooked to your preference.</p>
+        </header>
+        <div class="grid grid--4">
+          <article class="card dish reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80" alt="Premium ribeye steak with herb butter" loading="lazy"><span class="badge">Chef's Choice</span></div>
+            <div class="card__body"><h3 class="card__title">Premium Ribeye Steak</h3><p class="card__text">Well-marbled 300g ribeye, char-grilled with garlic and thyme butter.</p><p class="price">EGP 1,450</p></div>
+          </article>
+          <article class="card dish reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=700&q=80" alt="Filet mignon served with sauce" loading="lazy"><span class="badge">Popular</span></div>
+            <div class="card__body"><h3 class="card__title">Filet Mignon</h3><p class="card__text">Tender 220g center-cut filet with red wine jus and creamy mash.</p><p class="price">EGP 1,650</p></div>
+          </article>
+          <article class="card dish reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=700&q=80" alt="T-bone steak on the grill" loading="lazy"></div>
+            <div class="card__body"><h3 class="card__title">T-Bone Steak</h3><p class="card__text">Two cuts in one: strip and filet, grilled on the bone for 450g of flavor.</p><p class="price">EGP 1,850</p></div>
+          </article>
+          <article class="card dish reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80" alt="Sliced grilled tenderloin" loading="lazy"></div>
+            <div class="card__body"><h3 class="card__title">Grilled Tenderloin</h3><p class="card__text">Sliced tenderloin with roasted vegetables and peppercorn sauce.</p><p class="price">EGP 1,350</p></div>
+          </article>
+        </div>
+        <p class="note">Sample prices for demonstration purposes.</p>
+      </div>
+    </section>
+
+    <!-- 05. FULL MENU -->
+    <section class="section" id="menu">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">The Menu</p>
+          <h2 class="section__title">Crafted for Every Craving</h2>
+          <p class="section__sub">Choose a category to browse our full menu.</p>
+        </header>
+        <div class="filters reveal" role="group" aria-label="Menu categories" id="menuFilters"></div>
+        <p class="sr-only" id="menuStatus" role="status" aria-live="polite"></p>
+        <div class="grid--menu" id="menuGrid"></div>
+        <noscript><p class="note">Please enable JavaScript to browse the menu.</p></noscript>
+        <p class="note">All dishes and prices are sample demo content (EGP).</p>
+      </div>
+    </section>
+
+    <!-- 06. SPECIAL OFFERS -->
+    <section class="section section--dark" id="offers">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--light">Special Offers</p>
+          <h2 class="section__title section__title--light">Made for Sharing</h2>
+          <p class="section__sub section__sub--light">Demo promotions with sample prices.</p>
+        </header>
+        <div class="grid grid--3">
+          <article class="card offer reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=80" alt="Steak dinner for two with sides" loading="lazy"><span class="badge badge--discount">-20%</span></div>
+            <div class="card__body"><h3 class="card__title">Steak Dinner for Two</h3><p class="card__text">Two main steaks, a shared starter, two sides and two desserts.</p>
+              <p class="offer__prices"><s>EGP 3,500</s><span class="price">EGP 2,800</span></p>
+              <a href="#reservation" class="btn btn--primary btn--block" data-offer="Steak Dinner for Two">Reserve This Offer</a></div>
+          </article>
+          <article class="card offer reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=700&q=80" alt="Large sharing platter of grilled meats" loading="lazy"><span class="badge badge--discount">-25%</span></div>
+            <div class="card__body"><h3 class="card__title">Family Feast</h3><p class="card__text">A sharing platter of mixed grills for four, with sides and drinks.</p>
+              <p class="offer__prices"><s>EGP 6,400</s><span class="price">EGP 4,800</span></p>
+              <a href="#reservation" class="btn btn--primary btn--block" data-offer="Family Feast">Reserve This Offer</a></div>
+          </article>
+          <article class="card offer reveal">
+            <div class="card__media"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Weekend special grilled dish" loading="lazy"><span class="badge badge--discount">-15%</span></div>
+            <div class="card__body"><h3 class="card__title">Weekend Special</h3><p class="card__text">Any signature steak with a starter and a dessert, Friday and Saturday.</p>
+              <p class="offer__prices"><s>EGP 2,000</s><span class="price">EGP 1,700</span></p>
+              <a href="#reservation" class="btn btn--primary btn--block" data-offer="Weekend Special">Reserve This Offer</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2 class="section__title">A Look Inside PRIME HOUSE</h2>
+          <p class="section__sub">Dishes, details and the atmosphere of the dining room.</p>
+        </header>
+        <div class="gallery reveal" id="gallery-grid">
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80" data-caption="Signature steak, fresh off the grill"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Signature steak, fresh off the grill" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" data-caption="The main dining room"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant interior with warm lighting" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=80" data-caption="An evening at the table"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Guests dining in the restaurant" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1400&q=80" data-caption="Prepared in an open kitchen"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80" alt="Chef preparing food in the kitchen" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1400&q=80" data-caption="Resting the steak before serving"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=80" alt="Steak resting on a wooden board" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" data-caption="Details that make the experience"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Beautifully plated dish and table setting" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=1400&q=80" data-caption="Sides and starters"><img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=600&q=80" alt="Fresh starters on a table" loading="lazy"></button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1400&q=80" data-caption="Drinks at the bar"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=600&q=80" alt="Cocktails served at the bar" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. RESERVATION -->
+    <section class="section section--beige" id="reservation">
+      <div class="container reservation">
+        <div class="reservation__intro reveal">
+          <p class="eyebrow">Reservations</p>
+          <h2 class="section__title">Book a Table</h2>
+          <p>Tell us when you would like to join us and we will set the table. Special occasions, dietary notes and seating preferences are all welcome.</p>
+          <p class="demo-notice"><strong>Demo notice:</strong> This form is a frontend demonstration. No booking is created and no data is sent or stored.</p>
+        </div>
+
+        <form class="form reveal" id="reservationForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required aria-describedby="fullName-error">
+              <p class="field__error" id="fullName-error" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+20 10 0000 0000" required aria-describedby="phone-error">
+              <p class="field__error" id="phone-error" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="email-error">
+            <p class="field__error" id="email-error" role="alert"></p>
+          </div>
+          <div class="form__row form__row--3">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required aria-describedby="date-error">
+              <p class="field__error" id="date-error" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <select id="time" name="time" required aria-describedby="time-error"><option value="">Select time</option></select>
+              <p class="field__error" id="time-error" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests" required aria-describedby="guests-error"><option value="">Select</option></select>
+              <p class="field__error" id="guests-error" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="requests">Special Requests <span class="optional">(optional)</span></label>
+            <textarea id="requests" name="requests" rows="3" maxlength="300" placeholder="Allergies, celebrations, seating preferences…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Reserve Table (Demo)</button>
+          <div class="form__success" id="formSuccess" role="status" tabindex="-1" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 09. REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2 class="section__title">What Guests Might Say</h2>
+          <p class="section__sub">Sample testimonials with fictional names, shown for design purposes only. They are not verified customer reviews.</p>
+        </header>
+        <div class="grid grid--4 grid--reviews">
+          <figure class="card review reveal">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>The ribeye was cooked exactly as I asked and the service was warm without being overbearing.</blockquote>
+            <figcaption><strong>Laila M.</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+          <figure class="card review reveal">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>A lovely room for a family dinner. The Family Feast was generous and easy to share.</blockquote>
+            <figcaption><strong>Omar K.</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+          <figure class="card review reveal">
+            <div class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</div>
+            <blockquote>Great burgers and a thoughtful dessert menu. We will be back for the filet next time.</blockquote>
+            <figcaption><strong>Nour S.</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+          <figure class="card review reveal">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Perfect for an anniversary evening. Quiet lighting, attentive staff and a beautiful T-bone.</blockquote>
+            <figcaption><strong>Karim A.</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT -->
+    <section class="section section--beige" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Visit PRIME HOUSE</h2>
+          <p class="section__sub">All details below are editable demo placeholders.</p>
+        </header>
+        <!-- EDIT: replace the placeholder phone, email and address below (also repeated in the footer) -->
+        <div class="grid grid--4 contact">
+          <div class="contact__item reveal"><h3>Phone</h3><p><a href="tel:+200000000000">+20 000 000 0000</a></p></div>
+          <div class="contact__item reveal"><h3>Email</h3><p><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+          <div class="contact__item reveal"><h3>Address</h3><p>123 Demo Street<br>City Name, Egypt</p></div>
+          <div class="contact__item reveal"><h3>Opening Hours</h3><p>Daily: 12:00 PM – 12:00 AM</p></div>
+        </div>
+        <ul class="social reveal" aria-label="Social media (demo placeholders)">
+          <li><a href="#" data-demo-link aria-label="Instagram (demo placeholder)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg><span>Instagram</span></a></li>
+          <li><a href="#" data-demo-link aria-label="Facebook (demo placeholder)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z" fill="currentColor"/></svg><span>Facebook</span></a></li>
+          <li><a href="#" data-demo-link aria-label="TikTok (demo placeholder)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3c.3 2.4 1.8 4 4 4.2v3.2c-1.5 0-2.8-.4-4-1.2v6.1a5.3 5.3 0 1 1-5.3-5.3c.3 0 .6 0 .8.1v3.3a2.1 2.1 0 1 0 1.3 2V3H15z" fill="currentColor"/></svg><span>TikTok</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="brand brand--light">PRIME<span>HOUSE</span></a>
+        <p class="footer__text">A premium steakhouse concept built around quality cuts, careful grilling and a welcoming table. Where every bite becomes an experience.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#offers">Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li><li><a href="#reservation">Book a Table</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>+20 000 000 0000</li><li>hello@example.com</li><li>123 Demo Street, City Name</li><li>Daily 12:00 PM – 12:00 AM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="#" data-demo-link>Instagram</a></li><li><a href="#" data-demo-link>Facebook</a></li><li><a href="#" data-demo-link>TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> PRIME HOUSE. Demo website – all content is sample content.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <!-- Gallery lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" id="lbClose" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next image">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
